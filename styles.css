@@ -18,59 +18,91 @@
 .nav-container {
     width: 100%;
     position: fixed;
-    color: white;
     letter-spacing: 0.025em;
     transition: background-color 0.2s linear;        
 }
 
 .navbar.scrolled {
-    background-color: beige;
-    background-color: beige;
+    background-color: rgb(202, 202, 153);
+    background-color: rgb(202, 202, 153);
     opacity: .8;
     border-bottom: 1px solid black;
 }
 
+.ml-auto {
+    margin-left: auto !important;
+}
+
 /*navbar css end*/
 
+/*Sections css*/
 .section {
-    padding: 10%;
+    padding: 3% 18%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.section-head{
+.section p {
+    font-size: 19px;
+    line-height: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section-head {
+    letter-spacing: 5px;    
+}
+
+.section-head h1 {
+    font-size: 70px;
+}
+
+header {
     height: 100vh;
 }
 
-.section-head img {
+header img {
     padding-top: 5%;
-}
-
-.section img {
-    padding-bottom: 20px;
-}
-
-.section-bottom {
-    padding-bottom: 20px;
-    height: 100vh;
 }
 
 .colored {
     background-color: beige;
 }
 
-.tagline {
-    margin-top: 50px;
+/*Sectins css end*/
+
+/*Content css*/
+
+.content-container {
+    padding: 0 18%;
+    max-width: 100%;
+}
+
+.content-head {
+    margin-top: 55px;
     margin-bottom: 50px;
+}
+
+.content {
+    line-height: 50px;
 }
 
 .smallPic {
     width: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 50px;
+    margin-right: 30px;
 }
 
-.ml-auto {
-    margin-left: auto !important;
-}
+/*Content css end*/
+
+/*Scroll button css*/
+
+
+
+/*Scroll button css end
+
+/*General css*/
 
 h1 {
     font-size: 60px;
@@ -82,7 +114,7 @@ a {
 }
 
 p {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 img {
@@ -90,9 +122,20 @@ img {
 }
 
 hr {
-    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 52%;
 }
 
 h1, p, a {
     font-family: 'Ubuntu', sans-serif;
 }
+
+/*General css end*/
+
+/*Media Queries*/
+
+@media only screen and (max-width: 990px) {
+
+}
+
+/*Media Queries end*/
