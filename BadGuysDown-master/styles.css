@@ -35,6 +35,18 @@
 
 /*navbar css end*/
 
+/*Header css*/
+
+header {
+    height: 100vh;
+}
+
+header img {
+    padding-top: 5%;
+}
+
+/*Header css end*/
+
 /*Sections css*/
 .section {
     padding: 3% 18%;
@@ -55,14 +67,6 @@
 
 .section-head h1 {
     font-size: 70px;
-}
-
-header {
-    height: 100vh;
-}
-
-header img {
-    padding-top: 5%;
 }
 
 .colored {
@@ -106,6 +110,30 @@ header img {
 
 /*Content css end*/
 
+/*Card css*/
+
+.card {
+    line-height: 30px;
+    position: static;
+}
+
+/*Card css end*/
+
+/*jumbotron css*/
+.jumbotron {
+    background-color: beige;
+    border-bottom: 1px solid black;
+}
+/*jumbotron css end*/
+
+/*Table css*/
+
+table {
+    margin-top: 80px;
+}
+
+/*Table css end*/
+
 /*Footer css*/
 
 footer h1 {
@@ -122,6 +150,7 @@ button {
 }
 
 /*Footer css end*/
+
 /*Scroll button css*/
 
 
@@ -160,8 +189,79 @@ h1, p, a {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1371px){    
 
+    header {
+        height: 100%;
+    }
+
+    .marginTop {
+        margin-top: 100px;
+    }
+
+    .section {
+        padding: 3% 5%;
+    }
+
+}
+
+@media only screen and (max-width: 1251px) {
+
+    .smallPic {
+        float: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1147px){
+
+    
+
+}
+
+@media only screen and (max-width: 991px) {
+    /*Header css*/
+
+    header {
+        height: 100%;
+    }
+    
+    header img {
+        padding-top: 5%;
+        margin-bottom: 50px;
+    }
+
+    /*Header css end*/
+
+    /*Section css*/
+
+    .section {
+        padding: 3% 5%;
+    }
+
+    .marginTop {
+        margin-top: 100px;
+    }
+
+    hr {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        width: 70%;
+    }
+
+    /*Section css end*/
+
+    /*Content css*/
+
+    .content {
+        line-height: 30px;
+    }
+
+    .smallPic {
+        width: 50%;
+    }
+
+    /*Content css end*/
 }
 
 /*Media Queries end*/
