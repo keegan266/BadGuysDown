@@ -1,0 +1,107 @@
+body {
+    background-color: #2a363b;
+}
+
+a {
+    font-size: 22px;
+    color: white !important;
+}
+
+/*navbar css*/
+
+.navbar img {
+    width: 65px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.nav-container {
+    width: 100%;
+    position: fixed;
+    letter-spacing: 0.025em;     
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+/*navbar css end*/
+
+/*content css*/
+
+.content-container{
+    padding-top: 300px;
+    padding-bottom: 290px;
+}
+
+.jumbotron {
+    color: white;
+    background-color: #2a363b;
+}
+
+.lead {
+    font-size: 30px;
+}
+
+/*content css end*/
+
+/*section css*/
+
+.section {
+    padding: 0 20%;
+}
+
+.section h1 {
+    padding-bottom: 30px;
+}
+
+hr {
+    background-color: white;
+    width: 80%;
+}
+
+.section img {
+    width: 35%;
+}
+
+/*section css end*/
+
+/*card css*/
+
+.card-group {
+    padding: 0 10%;
+    margin-top: 350px;
+}
+
+.card {
+    background-color: #2a363b;
+    color: white;
+    border: none;
+    position: static;
+}
+
+/*card css end*/
+
+/*footer css*/
+
+footer {
+    color: white;
+    margin-top: 150px;    
+}
+
+footer h1 {
+    margin-top: 60px;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/*footer css end*/
