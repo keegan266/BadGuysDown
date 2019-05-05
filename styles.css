@@ -82,6 +82,18 @@ hr {
     position: static;
 }
 
+.mb-3 {
+    padding: 10px 10% 270px 10%;    
+}
+
+.mb-3 .card-title {
+    font-size: 40px;
+}
+
+.mb-3 .card-text {
+    font-size: 25px;
+}
+
 /*card css end*/
 
 /*footer css*/
