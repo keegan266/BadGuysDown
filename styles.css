@@ -32,8 +32,8 @@ a {
 /*content css*/
 
 .content-container{
-    padding-top: 300px;
-    padding-bottom: 290px;
+    padding-top: 280px;
+    padding-bottom: 310px;
 }
 
 .jumbotron {
@@ -66,13 +66,17 @@ hr {
     width: 35%;
 }
 
+.about {
+    margin-bottom: 250px;
+}
+
 /*section css end*/
 
 /*card css*/
 
 .card-group {
     padding: 0 10%;
-    margin-top: 350px;
+    margin-top: 250px;
 }
 
 .card {
@@ -83,7 +87,7 @@ hr {
 }
 
 .mb-3 {
-    padding: 10px 10% 270px 10%;    
+    padding: 250px 10% 270px 10%;    
 }
 
 .mb-3 .card-title {
@@ -92,6 +96,7 @@ hr {
 
 .mb-3 .card-text {
     font-size: 25px;
+    font-style: italic;
 }
 
 /*card css end*/
