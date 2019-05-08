@@ -5,6 +5,11 @@ body {
 a {
     font-size: 22px;
     color: white !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /*navbar css*/
@@ -39,6 +44,10 @@ a {
 .jumbotron {
     color: white;
     background-color: #2a363b;
+}
+
+.jumbotron-container {
+    padding-top: 150px;
 }
 
 .lead {
@@ -122,3 +131,25 @@ button {
 }
 
 /*footer css end*/
+
+/*table css*/
+
+tr {
+    color: white;
+}
+
+table {
+    text-align: center !important;
+    font-size: 20px;
+}
+
+.table-container {
+    padding: 0 30%;
+}
+
+.colored {
+    background-color: white;
+    color: #2a363b;
+}
+
+/*table css end*/
