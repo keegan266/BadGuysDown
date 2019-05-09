@@ -1,3 +1,17 @@
+body {
+    background-color: #2a363b;
+}
+
+a {
+    font-size: 22px;
+    color: white !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /*navbar css*/
 
 .navbar img {
@@ -6,27 +20,12 @@
 
 .navbar {
     background-color: transparent;
-    border: none;
-    z-index: 100;
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
 }
 
 .nav-container {
     width: 100%;
     position: fixed;
-    letter-spacing: 0.025em;
-    transition: background-color 0.2s linear;        
-}
-
-.navbar.scrolled {
-    background-color: rgb(202, 202, 153);
-    background-color: rgb(202, 202, 153);
-    opacity: .8;
-    border-bottom: 1px solid black;    
+    letter-spacing: 0.025em;     
 }
 
 .ml-auto {
@@ -35,106 +34,99 @@
 
 /*navbar css end*/
 
-/*Header css*/
+/*content css*/
 
-header {
-    height: 100vh;
+.content-container{
+    padding-top: 280px;
+    padding-bottom: 310px;
 }
 
-header img {
-    padding-top: 5%;
+.jumbotron {
+    color: white;
+    background-color: #2a363b;
 }
 
-/*Header css end*/
+.jumbotron-container {
+    padding-top: 10px;
+}
 
-/*Sections css*/
+.lead {
+    font-size: 30px;
+}
+
+/*content css end*/
+
+/*section css*/
+
 .section {
-    padding: 3% 18%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    padding: 0 20%;
 }
 
-.section p {
-    font-size: 19px;
-    line-height: 30px;
-    padding-left: 15%;
-    padding-right: 15%;
+.section h1 {
+    padding-bottom: 30px;
 }
 
-.section-head {
-    letter-spacing: 5px;    
+hr {
+    background-color: white;
+    width: 80%;
 }
 
-.section-head h1 {
-    font-size: 70px;
+.section img {
+    width: 35%;
 }
 
-.colored {
-    background-color: beige;
+.about {
+    margin-bottom: 250px;
 }
 
-.marginTop {
-    margin-top: 330px;
+#about-classes {
+    margin-top: 0;
+    padding-left: 25%;
+    padding-right: 21%;
 }
 
-/*Sectins css end*/
-
-/*Content css*/
-
-.content-container {
-    padding: 0 18%;
-    max-width: 100%;
+#class-head {
+    padding: 0 0;
+    margin-bottom: 0;
 }
 
-.content-head {
-    margin-top: 55px;
-    margin-bottom: 50px;
+/*section css end*/
+
+/*card css*/
+
+.card-group {
+    padding: 0 10%;
+    margin-top: 250px;
 }
-
-.content {
-    line-height: 50px;
-}
-
-.smallPic {
-    width: 30%;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    margin-right: 30px;
-}
-
-.contentpic {
-    margin-top: 50px;
-    margin-bottom: 60px;
-    border: 1px solid black;    
-}
-
-/*Content css end*/
-
-/*Card css*/
 
 .card {
-    line-height: 30px;
+    background-color: #2a363b;
+    color: white;
+    border: none;
     position: static;
 }
 
-/*Card css end*/
-
-/*jumbotron css*/
-.jumbotron {
-    background-color: beige;
-    border-bottom: 1px solid black;
-}
-/*jumbotron css end*/
-
-/*Table css*/
-
-table {
-    margin-top: 80px;
+.mb-3 {
+    padding: 250px 10% 270px 10%;    
 }
 
-/*Table css end*/
+.mb-3 .card-title {
+    font-size: 40px;
+}
 
-/*Footer css*/
+.mb-3 .card-text {
+    font-size: 25px;
+    font-style: italic;
+}
+
+/*card css end*/
+
+/*footer css*/
+
+footer {
+    color: white;
+    margin-top: 150px;    
+}
 
 footer h1 {
     margin-top: 60px;
@@ -149,119 +141,36 @@ button {
     margin-top: 20px;
 }
 
-/*Footer css end*/
+#class-footer {
+    margin-top: 100px;
+}
 
-/*Scroll button css*/
+/*footer css end*/
 
+/*table css*/
 
+tr {
+    color: white;
+}
 
-/*Scroll button css end
+table {
+    text-align: center !important;
+    font-size: 20px;
+    margin-top: 100px;
+}
 
-/*General css*/
+.table-container {
+    padding: 0 30%;
+}
+
+.colored {
+    background-color: white;
+    color: #2a363b;
+}
 
 h1 {
-    font-size: 60px;
-    color: #001F3D;
+    color: white;
+    margin-top: 100px;
 }
 
-a {
-    font-size: 22px;
-}
-
-p {
-    font-size: 22px;
-}
-
-img {
-    width: 100%;
-}
-
-hr {
-    margin-bottom: 100px;
-    width: 52%;
-}
-
-h1, p, a {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/*General css end*/
-
-/*Media Queries*/
-
-@media only screen and (max-width: 1371px){    
-
-    header {
-        height: 100%;
-    }
-
-    .marginTop {
-        margin-top: 100px;
-    }
-
-    .section {
-        padding: 3% 5%;
-    }
-
-}
-
-@media only screen and (max-width: 1251px) {
-
-    .smallPic {
-        float: none !important;
-    }
-
-}
-
-@media only screen and (max-width: 1147px){
-
-    
-
-}
-
-@media only screen and (max-width: 991px) {
-    /*Header css*/
-
-    header {
-        height: 100%;
-    }
-    
-    header img {
-        padding-top: 5%;
-        margin-bottom: 50px;
-    }
-
-    /*Header css end*/
-
-    /*Section css*/
-
-    .section {
-        padding: 3% 5%;
-    }
-
-    .marginTop {
-        margin-top: 100px;
-    }
-
-    hr {
-        margin-bottom: 40px;
-        margin-top: 40px;
-        width: 70%;
-    }
-
-    /*Section css end*/
-
-    /*Content css*/
-
-    .content {
-        line-height: 30px;
-    }
-
-    .smallPic {
-        width: 50%;
-    }
-
-    /*Content css end*/
-}
-
-/*Media Queries end*/
+/*table css end*/
