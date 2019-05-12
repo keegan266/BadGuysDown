@@ -1,5 +1,6 @@
 body {
     background-color: #2a363b;
+    max-width: 100%;;
 }
 
 a {
@@ -10,6 +11,19 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.display-2 {
+    margin-top: 40px;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    padding-bottom: 590px;
 }
 
 /*navbar css*/
@@ -25,7 +39,7 @@ a:hover {
 .nav-container {
     width: 100%;
     position: fixed;
-    letter-spacing: 0.025em;     
+    letter-spacing: 0.025em; 
 }
 
 .ml-auto {
@@ -37,13 +51,20 @@ a:hover {
 /*content css*/
 
 .content-container{
-    padding-top: 280px;
+    padding-top: 200px;
     padding-bottom: 310px;
+    background-image: url(images/bullets.jpg);   
+    background-size: cover;
+    background-repeat: none;
+}
+
+.darken {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bullets.jpg);
 }
 
 .jumbotron {
     color: white;
-    background-color: #2a363b;
+    background-color: transparent;
 }
 
 .jumbotron-container {
@@ -72,11 +93,19 @@ hr {
 }
 
 .section img {
-    width: 35%;
+    width: 30%;
 }
 
 .about {
-    margin-bottom: 250px;
+    padding-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.about .lead {
+    font-size: 27px;
+    padding-top: 50px;
+    line-height: 45px;
 }
 
 #about-classes {
@@ -90,13 +119,28 @@ hr {
     margin-bottom: 0;
 }
 
+#family {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/family.jpg);
+    background-size: cover;
+    background-repeat: none;
+    margin-top: 200px;    
+}
+
+#family .lead, #family h1 {
+    color: white;
+}
+
+#family .display-2 {
+    margin-top: 0;
+}
+
 /*section css end*/
 
 /*card css*/
 
 .card-group {
     padding: 0 10%;
-    margin-top: 250px;
+    margin-top: 50px;
 }
 
 .card {
@@ -119,30 +163,72 @@ hr {
     font-style: italic;
 }
 
+#instructor {
+    width: 90%;
+}
+
+.list-group {
+    margin-top: 50px;
+}
+
+.list-group, .list-group-item {
+    background-color: #2a363b;
+    border: none;
+}
 /*card css end*/
 
 /*footer css*/
 
 footer {
     color: white;
-    margin-top: 150px;    
+    margin-top: 150px;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 590px;       
 }
 
 footer h1 {
     margin-top: 60px;
+    margin-right: 10px;
 }
 
 .copyright {
-    margin-top: 30px;
+    margin-top: 70px;
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
 button {
     margin-top: 20px;
+    margin-right: 30px; 
 }
 
 #class-footer {
     margin-top: 100px;
+}
+
+#home-footer {
+    margin-top: 0;
+}
+
+.row {
+    margin-top: 50px;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*footer css end*/
@@ -161,6 +247,7 @@ table {
 
 .table-container {
     padding: 0 30%;
+    margin-bottom: 300px;
 }
 
 .colored {
@@ -170,7 +257,62 @@ table {
 
 h1 {
     color: white;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 /*table css end*/
+
+/*media query*/
+
+@media only screen and (max-width: 768px) {
+    .section, .about {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card-group {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .content-container {
+        padding-top: 0;
+    }
+
+    .navbar img {
+        opacity: 0;
+    }
+
+    .section, .about {
+        text-align: left;
+    }
+
+    .section h1, .about h1 {
+        text-align: center;
+    }
+
+    #footer-motto {
+        opacity: 1;
+    }
+
+    .column {
+        opacity: 0;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    button {
+        margin-right: 0;
+    }
+
+    .copyright {
+        margin-top: 0;
+    }
+}
+
+/*media query end*/
